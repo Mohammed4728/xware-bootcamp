@@ -1,0 +1,53 @@
+  161  pwd
+  162  ls -r
+  163  cd Desktop/
+  164  mkdir test2
+  165  mvdir ?
+  166  mv ?
+  167  mv --help
+  168  clear
+  169  pwd
+  170  desktop-file-
+  171  mkdir test1
+  172  cd test1/
+  173  touch file1
+  174  cd
+  175  cd Desktop/
+  176  mkdir test2
+  177  mv test1 test2
+  178  cp -r test2 /test2/test1
+  179  cd test2
+  180  cp -r test2 test1
+  181  cd .
+  182  cd ..
+  183  cd test2
+  184  cd test1
+  185  cd ..
+  186  cd..
+  187  cd -r test2 ~/Desktop/test2/test1
+  188  cp -r test2 ~/Desktop/test2/test1
+  189  cp -r test2 ~/Desktop/test2/test1/
+  190  cp -r /test2 ~/Desktop/test2/test1/
+  191  cp -r test2/ ~/Desktop/test2/test1/
+  192  cp -r test2 ~/Desktop/test2/test1/
+  193  cp -r test2 ~/Desktop/test2/test1/asd
+  194  cp -r test2 ~/Desktop/test2/
+  195  history
+  196  ls
+  197  test1
+  198  cd test1
+  199  cd .
+  200  cd ..
+  201  cp -r test1 ~/Desktop/test2/
+  202  cp -r test1 /home/m/Desktop/test2
+  203  mv test1 new_test
+  204  mv new_test test1
+  205  cp -r test1 /home/m/Desktop/
+  206  mv test1 copied_test1
+  207  rm -r test1
+  208  cd ..
+  209  rm -r test1
+  210  cd test 2
+  211  cd test2/
+  212  df -T
+  213  history
