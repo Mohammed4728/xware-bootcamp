@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+nav{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 7%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    gap:50px;
+    list-style: none;
+}
+ul li:last-child{
+    color: white;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.band_img{
+    min-height:650px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    background: url(../images/image2.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-flow:column ;
+}
+.band_img p{
+    line-height: 3;
+    font-weight: bold;
+
+}
+.the_band{
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    height: 20%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.band_txt h2{
+    margin-bottom:20px ;
+}
+.band_txt p{
+    color: rgb(128, 126, 126);
+    margin-bottom: 20px;
+}
+.band_img span{
+    text-align: left;
+}
+.imgs{
+    margin-top:80px ;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.imgs img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+.tour_dates{
+    margin-top: 60px;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+}
+
+.top_txt{
+    color: white;
+    margin-top: 80px;
+    
+    line-height: 3;
+}
+.top_txt p{
+    color: rgb(128, 126, 126);
+}
+
+.month{
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.month p{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+.month span{
+    background-color: red;
+    margin-left: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.tickets{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 7%;
+    background-color: black;
+    
+}
+
+.card{
+    background-color: white;
+    text-align: left;
+    width: 30%;
+    height: 100%;
+
+
+}
+.card img{
+    width:100%;
+}
+.card h3{
+    margin: 10px;
+}
+.card p{
+    color: rgb(128, 126, 126);
+    margin-bottom:10px ;
+    margin-left: 10px;
+}
+.card span{
+    margin-bottom:10px ;
+    margin-left: 10px;
+}
+.card button{
+    display: block;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+}
+
+.contact{
+    margin:auto;
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    width: 80%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
