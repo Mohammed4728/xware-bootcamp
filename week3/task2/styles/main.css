@@ -11,7 +11,7 @@ nav{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
 }
 .food1{
@@ -80,6 +80,9 @@ nav{
     background-color: #ddd;
     border-radius: 5px;
   }
+  hr{
+    color: rgba(197, 197, 197, 0.527);
+  }
 
   .food_man{
     margin-top: 30px;
@@ -96,6 +99,8 @@ nav{
     margin-bottom: 20px;
   }
   .food_man p{
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 20px;
     color: grey;
   }
@@ -119,25 +124,60 @@ nav{
   .foot h2{
     margin-bottom: 20px;
   }
+  .foot a{
+    color: black;
+  }
 
 .blog_posts{
     height: 100%;
     width: 20%;
-    text-align: left;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+}
+.blog_posts h2{
+  margin-bottom: 25px;
+
 }
 .top {
     display: flex;
+    text-align: left;
 }
+text1{
+  display: flex;
+  text-align: left;
+}
+
 .top img{
-    height: 15%;
-    align-items: center;
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
 }
+
 .bottom{
     display: flex;
+    text-align: left;
+
 }
 .bottom img{
-    size: 20%;
-    align-items: center;
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.popular_tags{
+  text-align: left;
+  width: 30%;
+}
+.links1{
+  margin-top: 25px;
+  line-height: 3;
+}
+.links1 a{
+  text-decoration: none;
+  color:white;
+  background-color: gray;
+  padding: 5px;
+}
+.links1 a:active{
+  background-color: black;
 }
