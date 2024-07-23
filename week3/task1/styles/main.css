@@ -124,6 +124,7 @@ ul li a{
     padding: 5px;
 }
 
+
 .tickets{
     display: flex;
     flex-flow: row wrap;
@@ -171,9 +172,9 @@ ul li a{
 .contact{
     margin:auto;
     display: flex;
-    flex-flow:column wrap ;
+    flex-flow:wrap ;
     text-align: center;
-    width: 80%;
+    width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     margin-bottom: 80px;
@@ -184,6 +185,7 @@ ul li a{
     width: 80%;
     justify-content: center;
     margin: auto;
+    gap: 30px;
 
 }
 .cantact_txt h2{
@@ -205,33 +207,98 @@ ul li a{
 .contact_info i{
     margin-right: 9px;
 }
-
-.form_div{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    margin: auto;
+form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    width: 40%;
+    
 }
-.form input{
-    border-radius: 0;
-    border-color: rgb(128, 126, 126);
-
+.name{
+    grid-area: 1/1/2/3;
 }
+.email{
+    grid-area: 1/3/2/5;
+}
+.message{
+    grid-area: 2/1/3/5;
+}
+.send{
+    grid-area: 3/4/4/5;
+    color: white;
+    background-color: black;
+    border: 0;
+}
+
+
+
 
 .foot_img{
     min-height:800px;
     width: 100%;
     display: flex;
-    color: white;
-    justify-content: flex-end;
-    background: url(../images/image3.jpg) no-repeat;
+    flex-flow: wrap;
+    /* justify-content: flex-end; */
+    /* background: url(../images/image3.jpg) no-repeat; */
     background-size: cover;
     text-align: center;
     flex-flow:column ;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 footer{
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+/* .fa {
+    font-size: 
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 60px;
+  }
+  .fa-facebook {
+    background: rgb(128, 126, 126);
+    color: white;
+    border-radius: 3px
+  }
+  .fa-instagram{
+    
+    color:rgb(128, 126, 126) ;
+  }
+  .fa-snapchat-ghost{
+    border-radius: 50%;
+    background: rgb(128, 126, 126);
+    color: white;
+  }
+  .fa-pinterest{
+    background:white;
+    color:  rgb(128, 126, 126);
+  }
+  .fa-twitter{
+    color:  rgb(128, 126, 126);
+  }
+  .fa-linkedin{
+    
+    color:rgb(128, 126, 126);
+  } */
+  footer .fa{
+    font-size: 20px;
+    color: rgb(128, 126, 126);
+    /* margin-bottom: 70px; */
+}
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: 50px;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+footer p{
+    color: rgb(128, 126, 126);
+}
+footer p a{
+    color: rgb(128, 126, 126);
 }
