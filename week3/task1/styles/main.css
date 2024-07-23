@@ -140,7 +140,7 @@ ul li a{
     text-align: left;
     width: 30%;
     height: 100%;
-
+    flex-flow: wrap;
 
 }
 .card img{
@@ -165,14 +165,73 @@ ul li a{
     color: white;
     padding: 7px;
     margin: 10px;
+    border: 0;
 }
 
 .contact{
     margin:auto;
     display: flex;
+    flex-flow:column wrap ;
     text-align: center;
-    flex-flow: column;
     width: 80%;
     padding-left: 15%;
     padding-right: 15%;
+    margin-bottom: 80px;
+}
+.cantact_txt{
+    display: flex;
+    flex-flow:column wrap ;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+
+}
+.cantact_txt h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.cantact_txt p{
+    color: rgb(128, 126, 126);
+    margin-bottom: 80px;
+}
+.contact_info{
+    display: flex;
+    gap: 10px;
+    flex-flow: column wrap;
+    width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+}
+.contact_info i{
+    margin-right: 9px;
+}
+
+.form_div{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: auto;
+}
+.form input{
+    border-radius: 0;
+    border-color: rgb(128, 126, 126);
+
+}
+
+.foot_img{
+    min-height:800px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    background: url(../images/image3.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-flow:column ;
+    margin-bottom: 80px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
