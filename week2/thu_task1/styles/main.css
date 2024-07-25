@@ -20,7 +20,6 @@ body{
     padding-top: 7px;
     top: 0px;
     left: 300px;
-
 }
 h1{
     text-align: center;
@@ -43,7 +42,7 @@ h3{
 }
 .colors {
     display: flex;
-    flex-direction: row; /* Ensures the flex items are in a row */
+    flex-direction: row;
 }
 
 .black, .blue, .red, .yellow, .green, .brown {
@@ -51,7 +50,6 @@ h3{
     height: 25px;
     width: 25px;
 }
-
 .black { background-color: black; }
 .blue { background-color: blue; }
 .red { background-color: red; }

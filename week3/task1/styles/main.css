@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     min-height: 100vh;
 }
@@ -45,7 +44,6 @@ ul li a{
 .band_img p{
     line-height: 3;
     font-weight: bold;
-
 }
 .the_band{
     margin-top: 60px;
@@ -79,7 +77,6 @@ ul li a{
     width: 70%;
     border-radius: 5px;
 }
-
 .tour_dates{
     margin-top: 60px;
     background-color: black;
@@ -92,17 +89,14 @@ ul li a{
     padding-right: 15%;
     justify-content: center;
 }
-
 .top_txt{
     color: white;
     margin-top: 80px;
-    
     line-height: 3;
 }
 .top_txt p{
     color: rgb(128, 126, 126);
 }
-
 .month{
     background-color: white;
     display: flex;
@@ -123,8 +117,6 @@ ul li a{
     color: white;
     padding: 5px;
 }
-
-
 .tickets{
     display: flex;
     flex-flow: row wrap;
@@ -132,17 +124,14 @@ ul li a{
     height: 100%;
     justify-content: space-between;
     margin-bottom: 7%;
-    background-color: black;
-    
+    background-color: black;  
 }
-
 .card{
     background-color: white;
     text-align: left;
     width: 30%;
     height: 100%;
     flex-flow: wrap;
-
 }
 .card img{
     width:100%;
@@ -168,7 +157,6 @@ ul li a{
     margin: 10px;
     border: 0;
 }
-
 .contact{
     margin:auto;
     display: flex;
@@ -186,7 +174,6 @@ ul li a{
     justify-content: center;
     margin: auto;
     gap: 30px;
-
 }
 .cantact_txt h2{
     margin-top: 80px;
@@ -211,8 +198,7 @@ form{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 5px;
-    width: 40%;
-    
+    width: 40%; 
 }
 .name{
     grid-area: 1/1/2/3;
@@ -229,17 +215,11 @@ form{
     background-color: black;
     border: 0;
 }
-
-
-
-
 .foot_img{
     min-height:800px;
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    /* justify-content: flex-end; */
-    /* background: url(../images/image3.jpg) no-repeat; */
     background-size: cover;
     text-align: center;
     flex-flow:column ;
@@ -249,44 +229,6 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-/* .fa {
-    font-size: 
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 60px;
-  }
-  .fa-facebook {
-    background: rgb(128, 126, 126);
-    color: white;
-    border-radius: 3px
-  }
-  .fa-instagram{
-    
-    color:rgb(128, 126, 126) ;
-  }
-  .fa-snapchat-ghost{
-    border-radius: 50%;
-    background: rgb(128, 126, 126);
-    color: white;
-  }
-  .fa-pinterest{
-    background:white;
-    color:  rgb(128, 126, 126);
-  }
-  .fa-twitter{
-    color:  rgb(128, 126, 126);
-  }
-  .fa-linkedin{
-    
-    color:rgb(128, 126, 126);
-  } */
-  footer .fa{
-    font-size: 20px;
-    color: rgb(128, 126, 126);
-    /* margin-bottom: 70px; */
 }
 footer{
     display: flex;

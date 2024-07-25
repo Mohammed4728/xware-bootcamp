@@ -25,11 +25,9 @@ main{
 }
 footer{
     grid-area: 3/1/4/9;
-    /* text-align: center; */
     background-color: rgb(66, 64, 64);
     padding: 15px;
 }
 footer span{
     color: white;
-
 }
