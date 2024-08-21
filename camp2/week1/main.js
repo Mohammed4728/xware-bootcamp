@@ -21,6 +21,9 @@
 
 //2) You get an array of numbers, return the sum of all of the positives ones.
 
+
+//way 1
+
 // let number = [5,6,3,7,-10,-50];
 // let result = number.filter(checkSign);
 
@@ -31,7 +34,7 @@
 
 // console.log(sum); 
 
-////
+//way 2
 
 // let numbers = [1, -4, 7, 12];
 // function sumOfPositives(arr) {
@@ -43,6 +46,18 @@
 // console.log(sum); 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//3) Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function(a, b){return a-b});
+// const middlePoints = points.slice(1, 5);
+// console.log(middlePoints)
+// const sum = middlePoints.reduce((accumulator, currentValue) => {
+// return accumulator + currentValue;}, 0);
+// console.log(sum); 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //4)String-repeat  ==> Write a function that accepts an integer n and a string s as parameters, 
 // and returns a string of s repeated exactly n times.
@@ -70,12 +85,117 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//6)Consider an array/list of sheep where some sheep may be missing from their place. 
+// We need a function that counts the number of sheep present in the array (true means present). [read again]
+
+// const sheepArray = [true, true, false, true, false, false, true, true, false, true];
+// function countSheep(arrayOfSheep) {
+//   return arrayOfSheep.filter(sheep => sheep === true).length;
+// }
+//   const numberOfSheep = countSheep(sheepArray);
+//   console.log(numberOfSheep);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//7)Very simple, given a number (integer / decimal / both depending on the language), 
+// find its opposite (additive inverse). ex 1 = -1  [there is more ways , do later]
+
+// let x = -5;
+// function inverse(){
+//   return x = -x
+// }
+// console.log(inverse())
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //8)In this simple assignment you are given a number and have to make it negative.
 //  But maybe the number is already negative?
 
+// let x = 5;
+// function negative(){
+//   if (x>0) {
+//     console.log(-x);
+//   } else {
+//     console.log(x);
+//   }
+// }
+// negative();
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//9)Write a function findNeedle() that takes an array full of junk but containing one "needle" 
+// After your function finds the needle it should return a message (as a string) that says:
+//"found the needle at position " plus the index it found the needle, so:
+
+// const haystack = ["hay", "junk", "hay", "hay", "needle", "more junk", "hay"];
+// function findNeedle(haystack) {
+//     let position = haystack.indexOf("needle");
+//     return `found the needle at position ${position}`; //resurch this more
+//   }
+//   console.log(findNeedle(haystack));
+  
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//10)Return an array, where the first element is the count of positives numbers and the second 
+// element is sum of negative numbers. 0 is neither positive nor negative.
+
+// let arr = [1,2,3,4,5,0,-1.-2.-3.-4.-5];
+
+// function sum(number) {
+//     let sumPositive = 0;
+//     let sumNegative = 0;
+
+//     number.forEach(item => {
+//         item > 0 ? sumPositive++ : sumNegative +=item
+//     });
+//         return [sumPositive , sumNegative];
+// }
+// console.log(sum(arr));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//15)Write a function that removes the spaces from the string, then return the resultant string.
+
+// let x = "This is JavaScript"
+// function removeSpaces(str) {
+//     return str.replace(/\s+/g, '');
+//   }
+//   console.log(removeSpaces(x));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//16)Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, 
+// and the negatives become positives. Example:[ -1, 2, -3, 4, -5 ] ===> [ 1, -2, 3, -4, 5 ]
+
+// let x = [-1, 2, -3, 4, -5];
+// function invertArray(arr) {
+//     return arr.map(num => -num);
+//   }
+//   console.log(invertArray(x)); 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//17)Complete the method that takes a boolean value and return a "Yes" string for true, 
+// or a "No" string for false.  [read it again]
+
+// function boolToWord(bool) {
+//     return bool ? "Yes" : "No";
+//   }
+  
+//   console.log(boolToWord(true));
+//   console.log(boolToWord(false));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//18)You need to write a function that reverses the words in a given string. A word can also fit an empty string. 
+// If this is not clear enough, here are some examples: "Hello World" --> "World Hello"
+
+// let str = "Hello World"
+// console.log(str.split(' ').reverse().join(' '))
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //20)We need a function that can transform a number (integer) into a string. Examples 123  --> "123"
 
@@ -86,31 +206,31 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 //22)We need a function that can transform a string into a number. What ways of achieving this do you know? 
 // Examples "1234" --> 1234
+
+//way 1
 
 // let num = "1234";
 // let str = +num;
 // console.log(str);
 // console.log(typeof str);
 
-////
+//way 2
 
 // let num = "1234";
 // let str = parseInt(num)
 // console.log(str);
 // console.log(typeof str);
 
-////
+//way 3
 
 // let num = "1234";
 // let str = parseFloat(num)
 // console.log(str);
 // console.log(typeof str);
 
-////
+//way 4
 
 // let num = "1234";
 // let str = munber(num)
@@ -118,5 +238,20 @@
 // console.log(typeof str);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//29)Take an array and remove every second element from the array. Always keep the first element and start 
+// removing with the next element. Example:["Keep", "Remove", "Keep", "Remove", "Keep", ...] 
+// --> ["Keep", "Keep", "Keep", ...]
+
+// let x = ["Keep", "Remove", "Keep", "Remove", "Keep", "Remove"]
+// function removeSecondElement(arr) {
+//     return arr.filter((_, index) => index % 2 === 0);
+//   }
+// console.log(removeSecondElement(x));
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
