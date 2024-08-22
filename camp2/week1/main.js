@@ -40,14 +40,15 @@
 // function sumOfPositives(arr) {
 //     return arr
 //         .filter(num => num > 0)
-//         .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+//         .reduce((accumulator, currentValue) => accumulator + currentValue, 0); [search this]
 // }
 // let sum = sumOfPositives(numbers);
 // console.log(sum); 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//3) Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+//3) Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element 
+// ( by value, not by index! ).
 
 // const points = [40, 100, 1, 5, 25, 10];
 // points.sort(function(a, b){return a-b});
@@ -155,6 +156,58 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// 11)Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+//  Example: String === SSttrriinngg
+
+// let x = "String";
+// function doubleChar(str) {
+//     return str.split('').map(char => char + char).join('');
+// }
+// console.log(doubleChar(x)); 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//12)Your task is to create a function that does four basic mathematical operations.
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the
+
+function mathematicalOperations (operation , value1 , value2){
+    switch (operation) {
+        case "+":
+            return value1 + value2
+            break;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return "Invalid Operation"
+            break;
+    }
+}
+let value1 = 15;
+let value2 = 5;
+
+console.log(mathematicalOperations("+", value1, value2));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//14)Create a function with two arguments that will return an array of the first n multiples of x.
+// Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+// function multiples(x, n) {
+//     let result = [];
+//     for (let i = 1; x * i <= n; i++) {
+//         result.push(x * i);
+//     }
+//     return result;
+// }
+// console.log(multiples(3, 10));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //15)Write a function that removes the spaces from the string, then return the resultant string.
 
 // let x = "This is JavaScript"
@@ -196,6 +249,15 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//19)Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, 
+
+// let hours = 30;
+// let litres = 0.5 * hours;
+// console.log(litres);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //20)We need a function that can transform a number (integer) into a string. Examples 123  --> "123"
 
