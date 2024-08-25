@@ -40,7 +40,7 @@
 // function sumOfPositives(arr) {
 //     return arr
 //         .filter(num => num > 0)
-//         .reduce((accumulator, currentValue) => accumulator + currentValue, 0); [search this]
+//         .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 // }
 // let sum = sumOfPositives(numbers);
 // console.log(sum); 
@@ -74,8 +74,8 @@
 //5)Given a random non-negative number, you have to return the digits of this number within an array 
 // in reverse order.
 
-// let result = reverseDigits(348597);
-// function reverseDigits(num) {
+// let result = reverseNumbers(348597);
+// function reverseNumbers(num) {
 //     return num
 //         .toString()
 //         .split('')
@@ -171,26 +171,44 @@
 // The function should take three arguments - operation(string/char), value1(number), value2(number).
 // The function should return result of numbers after applying the
 
-function mathematicalOperations (operation , value1 , value2){
-    switch (operation) {
-        case "+":
-            return value1 + value2
-            break;
-        case '-':
-            return value1 - value2;
-        case '*':
-            return value1 * value2;
-        case '/':
-            return value1 / value2;
-        default:
-            return "Invalid Operation"
-            break;
-    }
-}
-let value1 = 15;
-let value2 = 5;
+// function mathematicalOperations (operation , value1 , value2){
+//     switch (operation) {
+//         case "+":
+//             return value1 + value2
+//             break;
+//         case '-':
+//             return value1 - value2;
+//         case '*':
+//             return value1 * value2;
+//         case '/':
+//             return value1 / value2;
+//         default:
+//             return "Invalid Operation"
+//             break;
+//     }
+// }
+// let value1 = 15;
+// let value2 = 5;
 
-console.log(mathematicalOperations("+", value1, value2));
+// console.log(mathematicalOperations("+", value1, value2));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//13)Write a method, that will get an integer array as parameter and will process every number from this array.
+// Return a new array with processing every number of the input-array 
+// like this:If the number has an integer square root, take this, otherwise square the number.
+
+// let x = [4, 3, 9, 7, 16, 2];
+// function processNumbers(arr) {
+//     return arr.map(num => {
+//         if (Number.isInteger(Math.sqrt(num))) {
+//             return Math.sqrt(num);
+//         } else {
+//             return num * num;
+//         }
+//     });
+// }
+// console.log(processNumbers(x));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -266,7 +284,24 @@ console.log(mathematicalOperations("+", value1, value2));
 // console.log(text)
 // console.log(typeof text);
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//21)Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+// function calculateAverage(numbers) {
+//     if (numbers.length === 0) {
+//         return 0;
+//     }
+//     let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+//     let average = sum / numbers.length;
+//     return average;
+// }
+// console.log(calculateAverage([1, 2, 3, 4, 5])); 
+// console.log(calculateAverage([]));
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //22)We need a function that can transform a string into a number. What ways of achieving this do you know? 
 // Examples "1234" --> 1234
@@ -299,7 +334,54 @@ console.log(mathematicalOperations("+", value1, value2));
 // console.log(str);
 // console.log(typeof str);
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//23)You take your son to the forest to see the monkeys. You know that there are a certain number there (n), 
+// but your son is too young to just appreciate the full number, he has to start counting them from 1.
+
+// let x = 5;
+// function countMonkeys(n) {
+//     let monkeys = [];
+//     for (let i = 1; i <= n; i++) {
+//         monkeys.push(i);
+//     }
+//     return monkeys;
+// }
+// console.log(countMonkeys(x));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//24)Write a function that takes an array of words and smashes them together into a sentence and returns 
+// the sentence. You can ignore any need to sanitize words or add punctuation, 
+// but you should add spaces between each word. Be careful, there shouldn't be a space at the ,  
+// Example ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+
+// let x = ['hello', 'world', 'this', 'is', 'great'];
+// function smashWords(words) {
+//     return words.join(' ');
+// }
+// console.log(smashWords(x));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//25)When provided with a number between 0-9, return it in words.  Example Input :: 1 reuturn One
+
+// function numberToWord(number) {
+//     const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+//     if (number >= 0 && number <= 9) {
+//         return words[number];
+//     } else {
+//         return "Invalid input";
+//     }
+// }
+// console.log(numberToWord(0));
+// console.log(numberToWord(1));
+// console.log(numberToWord(5));
+// console.log(numberToWord(9));
+// console.log(numberToWord(10));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //29)Take an array and remove every second element from the array. Always keep the first element and start 
 // removing with the next element. Example:["Keep", "Remove", "Keep", "Remove", "Keep", ...] 
@@ -312,7 +394,7 @@ console.log(mathematicalOperations("+", value1, value2));
 // console.log(removeSecondElement(x));
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
