@@ -383,16 +383,48 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    //26)It's bonus time in the big city! The fatcats are rubbing their paws in anticipation...
-    // but who is going to make the most money? // Build a function that takes in two arguments (salary, bonus). 
-    // Salary will be an integer, and bonus a boolean. If bonus is true, the salary should be multiplied by 10. 
-    // If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+//26)It's bonus time in the big city! The fatcats are rubbing their paws in anticipation...
+// but who is going to make the most money? // Build a function that takes in two arguments (salary, bonus). 
+// Salary will be an integer, and bonus a boolean. If bonus is true, the salary should be multiplied by 10. 
+// If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+// function calculateSalary(salary, bonus) {
+//     return bonus ? salary * 10 : salary;
+// }
+// console.log(calculateSalary(1000, true));
+// console.log(calculateSalary(2500, false)); 
 
-    // function calculateSalary(salary, bonus) {
-    //     return bonus ? salary * 10 : salary;
-    // }
-    // console.log(calculateSalary(1000, true));
-    // console.log(calculateSalary(2500, false)); 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//27)Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the 
+// input data is always a string, no need to verify it. Example : "Hi!!!"   ---> "Hi!!"
+
+// let x = "Hi!!!"
+// function removeLastOne(str) {
+//     if (str.endsWith("!")) {
+//       return str.substr(0, str.length - 1);
+//     }
+//     return str;
+//   }
+//   console.log(removeLastOne (x));
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//28)Create a function which answers the question "Are you playing banjo?".If your name starts with the letter "R" 
+// or lower case "r", you are playing banjo! .The function takes a name as its only argument, 
+// and returns one of the following strings: name + " plays banjo" or name + " does not play banjo"
+
+// let x = "Rango";
+// let y = "Djago";
+// function playingBango(name) {
+//     let playingBango = name.toLowerCase();
+//     if (playingBango.startsWith("r")) {
+//         return name + " plays banjo";
+//     }else {
+//         return name + " does not play banjo";
+//     }
+// }
+// console.log(playingBango(x));
+// console.log(playingBango(y));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -409,6 +441,73 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//30)Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. 
+// Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+// Write a code that gives out the total amount for different days(d).
+
+// let x = 3;
+// let y = 10;
+// function rentalCarCost(d) {
+//     let dailyRate = 40;
+//     let totalCost = d * dailyRate;
+
+//     if (d >= 7) {
+//         totalCost -= 50;
+//     } else if (d >= 3) {
+//         totalCost -= 20;
+//     }
+//     return totalCost;
+// }
+// console.log(rentalCarCost(x));
+// console.log(rentalCarCost(y));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//31)In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) 
+// called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans. 
+// It then returns true if exactly one of the two expressions are true, false otherwise. For example:
+
+//false xor false == false // since both are false
+//true xor false == true // exactly one of the two expressions are true
+//false xor true == true // exactly one of the two expressions are true
+//true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions 
+// evaluate to true.
+
+// function xor(a, b) {
+//     return a !== b;
+// }
+// console.log(xor(false, false));
+// console.log(xor(true, false));
+// console.log(xor(false, true));
+// console.log(xor(true, true));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//32)Your task is to find the first element of an array that is not consecutive.By not consecutive
+// we mean not exactly 1 larger than the previous element of the array. E.g.
+// If we have an array [1,2,3,4,6,7,8] then 1 then 2 then 3 then 4 are all consecutive but 6 is not,
+// so that's the first non-consecutive number.
+
+function firstNonConsecutive(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] !== arr[i - 1] + 1) {   //read this part again, dont get it
+            return arr[i];
+        }
+    }
+    return null;
+}
+
+console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); 
+console.log(firstNonConsecutive([1, 2, 3, 4, 5, 6, 7]));
+console.log(firstNonConsecutive([4, 5, 6, 8, 9]));       
+console.log(firstNonConsecutive([1]));  
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
