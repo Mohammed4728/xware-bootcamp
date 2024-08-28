@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    background-color: #f4f4f4;
+    margin: 0;
+    background: url(../images/photo_2023-11-21_12-34-32.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+#app {
+    background-color: white;
+    margin: 40px auto 0 auto;
+    width:60% ;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(28, 31, 65, 0.763);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(219, 219, 219);
+    margin-bottom: 40px;
+}
+
+h1:hover{
+    color: #18bfef;
+    cursor: pointer;
+}
+
+#new-task{
+    border: 2px solid #eeeeee;
+    border-radius: 0%;
+    width: 60%;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#add-task-btn {
+    height: 40px;
+    width: 20%;
+    border: 2px solid rgb(33, 41, 49);
+    margin-left: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(33, 41, 49);
+}
+
+#add-task-btn:hover{
+    background-color: #18bfef;
+    border-color: #18bfef;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+    border: 2px solid rgb(33, 41, 49);
+    margin-top: 35px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: rgb(33, 41, 49);
+    background-color: white;
+}
+
+button:hover{
+    color: #18bfef;
+    border-color: #18bfef;
+}
+
+span{
+    font-weight:400;
+    font-size: 30px;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task.done {
+    color: green;
+    margin-top: 60px;
+}
+
+.task.not-done {
+    color: red;
+    margin-top: 60px;
+}

@@ -489,21 +489,24 @@
 // If we have an array [1,2,3,4,6,7,8] then 1 then 2 then 3 then 4 are all consecutive but 6 is not,
 // so that's the first non-consecutive number.
 
-function firstNonConsecutive(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] !== arr[i - 1] + 1) {   //read this part again, dont get it
-            return arr[i];
-        }
-    }
-    return null;
-}
+// function firstNonConsecutive(arr) {
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] !== arr[i - 1] + 1) {   //read this part again, dont get it
+//             return arr[i];
+//         }
+//     }
+//     return null;
+// }
 
-console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); 
-console.log(firstNonConsecutive([1, 2, 3, 4, 5, 6, 7]));
-console.log(firstNonConsecutive([4, 5, 6, 8, 9]));       
-console.log(firstNonConsecutive([1]));  
+// console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); 
+// console.log(firstNonConsecutive([1, 2, 3, 4, 5, 6, 7]));
+// console.log(firstNonConsecutive([4, 5, 6, 8, 9]));       
+// console.log(firstNonConsecutive([1]));  
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//33)Bob needs a fast way to calculate the volume of a cuboid with three values: the length, 
+// width and height of the cuboid. Write a function to help Bob with this calculation.
 
 
 
