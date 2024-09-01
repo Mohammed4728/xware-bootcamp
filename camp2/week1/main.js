@@ -508,6 +508,19 @@
 //33)Bob needs a fast way to calculate the volume of a cuboid with three values: the length, 
 // width and height of the cuboid. Write a function to help Bob with this calculation.
 
+// function calculateVolume(length, width, height) {
+//     return length * width * height;
+// }
+
+// let volume = calculateVolume(5, 3, 2);
+// console.log("The volume of the cuboid is: " + volume);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//34)Each number should be formatted that it is rounded to two decimal places. You don't need to check whether 
+// the input is a valid number because only valid numbers are used in the tests.
+// Example:  5.5589 is rounded 5.56
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////

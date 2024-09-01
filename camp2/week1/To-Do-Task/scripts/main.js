@@ -1,3 +1,4 @@
+//pushing data to local storage
 function saveTasks() {
     const tasks = [];
     document.querySelectorAll('#task-list .task').forEach(task => {
@@ -24,7 +25,7 @@ function addTaskToDOM(taskText, done = false) {
 
     const span = document.createElement('span');
     span.textContent = taskText;
-
+// done btn
     const doneButton = document.createElement('button');
     doneButton.textContent = 'Done';
     doneButton.addEventListener('click', function() {
@@ -32,7 +33,7 @@ function addTaskToDOM(taskText, done = false) {
         li.classList.toggle('not-done');
         saveTasks();
     });
-
+// edit btn
     const editButton = document.createElement('button');
     editButton.textContent = 'Edit';
     editButton.addEventListener('click', function() {
@@ -42,14 +43,14 @@ function addTaskToDOM(taskText, done = false) {
             saveTasks();
         }
     });
-
+// delete btn
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.addEventListener('click', function() {
         li.remove();
         saveTasks();
     });
-
+// append children
     li.appendChild(span);
     li.appendChild(doneButton);
     li.appendChild(editButton);
@@ -57,7 +58,7 @@ function addTaskToDOM(taskText, done = false) {
 
     document.getElementById('task-list').appendChild(li);
 }
-
+// callong the function
 loadTasks();
 
 //adding a new task
