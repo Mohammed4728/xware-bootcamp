@@ -54,6 +54,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'  // Import router for navigation
 import mcdonaldsLogo from '../images/mcdonalds.jpg'
 import kfcLogo from '../images/kfc.jpg'
 import buffaloBurgerLogo from '../images/buffalo_burger.jpg'
@@ -72,7 +73,6 @@ const suggestions = ref([
     'Wendys',
     'Dominos Pizza',
     'Taco Bell',
-    'Pizza Hut',
     'Subway',
 ])
 const filteredSuggestions = ref([])
@@ -81,17 +81,16 @@ const filteredSuggestions = ref([])
 const restaurants = ref([
     { name: 'McDonalds', logo: mcdonaldsLogo, route: '/menu/mcdonalds' },
     { name: 'KFC', logo: kfcLogo, route: '/menu/kfc' },
-    {
-        name: 'Buffalo Burger',
-        logo: buffaloBurgerLogo,
-        route: '/menu/buffalo_burger',
-    },
+    { name: 'Buffalo Burger', logo: buffaloBurgerLogo, route: '/menu/buffalo_burger',},
     { name: 'Bazooka', logo: bazookaLogo, route: '/menu/bazooka' },
     { name: 'Wendys', logo: wendysLogo, route: '/menu/wendys' },
     { name: 'Dominos Pizza', logo: dominosLogo, route: '/menu/dominos' },
     { name: 'Taco Bell', logo: tacobellLogo, route: '/menu/tacobell' },
     { name: 'Subway', logo: subwayLogo, route: '/menu/subway' },
 ])
+
+// Define router instance
+const router = useRouter()
 
 const filterSuggestions = () => {
     if (query.value.trim() === '') {
@@ -110,13 +109,19 @@ const selectSuggestion = (suggestion) => {
 
 const handleSubmit = () => {
     if (query.value.trim()) {
-        alert(`Searching for: ${query.value}`)
-        query.value = ''
+        // Find the matching restaurant by name
+        const matchingRestaurant = restaurants.value.find(restaurant =>
+            restaurant.name.toLowerCase().includes(query.value.toLowerCase())
+        )
+        
+        if (matchingRestaurant) {
+            // Navigate to the matched restaurant route
+            router.push(matchingRestaurant.route)
+        } else {
+            alert('Restaurant not found')
+        }
+
         filteredSuggestions.value = []
     }
 }
 </script>
-
-<style scoped>
-/* Add any additional custom styles here if needed */
-</style>

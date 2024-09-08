@@ -2,8 +2,6 @@
     <header>
         <div class="wrapper">
             <nav>
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
                 <RouterLink to="/pickandgo">Pick & Go</RouterLink>
                 <!-- Link to PickAndGo -->
             </nav>
